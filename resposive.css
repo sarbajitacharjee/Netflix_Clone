@@ -1,0 +1,147 @@
+/* Base styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+/* Header and Navigation Styles */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.primary-menu--logo a {
+    display: inline-block;
+    width: 120px; /* Set a fixed width for the logo */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.primary-menu--list,
+.secondary-menu--list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.primary-menu--item a,
+.secondary-menu--item a {
+    color: white;
+    text-decoration: none;
+    padding: 0 1rem;
+}
+
+.hero {
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.hero--logo {
+    max-width: 100%; /* Ensure logo is responsive */
+    height: auto;
+}
+
+.hero--description {
+    margin: 1rem 0;
+}
+
+/* Button Styles */
+.hero--button {
+    padding: 0.5rem 1rem;
+    background: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Section Styles */
+.section__category {
+    margin: 2rem 0;
+}
+
+/* Carousel Styles */
+.carousel__container {
+    display: flex;
+    overflow: hidden; /* Hide overflow for the carousel */
+}
+
+.carousel--list {
+    display: flex; /* Make the list horizontal */
+    padding: 0;
+    margin: 0;
+    transition: transform 0.5s ease;
+}
+
+.carousel--item {
+    margin-right: 1rem; /* Spacing between items */
+}
+
+/* Footer Styles */
+footer {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .primary-menu--list {
+        display: none; /* Hide primary menu on small screens */
+    }
+    
+    .secondary-menu--list {
+        gap: 1rem; /* Reduce gap for smaller screens */
+    }
+
+    .hero--logo {
+        width: 30rem; /* Reduce logo size */
+    }
+
+    .hero--description {
+        width: 80%; /* Make description responsive */
+    }
+
+    .carousel--item img {
+        width: 10rem; /* Reduce carousel item size */
+    }
+
+    nav {
+        padding: 1rem; /* Adjust padding */
+    }
+
+    .options--list {
+        flex-direction: column; /* Stack items vertically */
+    }
+
+    footer {
+        padding: 10px; /* Reduce padding */
+    }
+
+    .social--list {
+        flex-wrap: wrap; /* Allow wrapping on small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .primary-menu--item a {
+        font-size: 0.9rem; /* Adjust font size for small screens */
+    }
+    
+    .category--title a {
+        font-size: 1rem; /* Reduce category title size */
+    }
+
+    .carousel--item {
+        margin-right: .2rem; /* Reduce margin */
+    }
+
+    .hero--button {
+        font-size: 0.8rem; /* Reduce button font size */
+    }
+}
