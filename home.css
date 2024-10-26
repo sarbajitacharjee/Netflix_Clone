@@ -120,6 +120,7 @@ body {
 
 /* NAVIGATION */
 
+
 nav{
     display: flex;
     justify-content: space-between;
@@ -129,6 +130,11 @@ nav{
     top: 0;
     width: 100%;
     transition: background-color 0.5s ease;
+}
+
+.profile-img{
+    width:33px;
+    border-radius: 4px;
 }
 
 .scrolled {
