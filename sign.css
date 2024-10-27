@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -6,11 +7,14 @@
 }
 
 body {
-    background: #000;
     height: 100vh; /* Ensure body takes full height */
+    background: #000;
+    background: url("images/NetlfixHome.jpeg") center/cover no-repeat;
+    
+
 }
 
-body::before {
+/* body::before {
     content: "";
     position: absolute;
     left: 0;
@@ -18,8 +22,8 @@ body::before {
     opacity: 0.5;
     width: 100%;
     height: 100%;
-    background: url("images/NetlfixHome.jpeg") center/cover no-repeat; /* Cover the background */
-}
+    background: url("images/NetlfixHome.jpeg") center/cover no-repeat;
+} */
 
 nav {
     position: fixed;
@@ -42,17 +46,20 @@ nav a img {
     max-width: 450px; /* Keep max width */
     transform: translate(-50%, -50%);
     background: rgba(0, 0, 0, .75);
+    margin-top: 20px; /* Add margin to separate from logo */
 }
 
 .form-wrapper h2 {
     color: #fff;
-    font-size: 2rem;
+    font-size: 2rem; /* Default size */
+    margin-bottom: 20px; /* Add margin below the heading */
 }
 
 .form-wrapper form {
     margin: 25px 0 65px;
 }
 
+/* Form Control Styles */
 form .form-control {
     height: 50px;
     position: relative;
@@ -71,6 +78,7 @@ form .form-control {
     padding: 0 20px;
 }
 
+/* Label Styling */
 .form-control input:is(:focus, :valid) {
     background: #444;
     padding: 16px 20px 0;
@@ -91,6 +99,7 @@ form .form-control {
     transform: translateY(-130%);
 }
 
+/* Button Styling */
 form button {
     width: 100%;
     padding: 16px 0;
@@ -110,6 +119,7 @@ form button:hover {
     background: #c40812;
 }
 
+/* Link Styling */
 .form-wrapper a {
     text-decoration: none;
 }
@@ -122,6 +132,7 @@ form button:hover {
     color: #b3b3b3;
 }
 
+/* Help Section Styling */
 form .form-help {
     display: flex;
     justify-content: space-between;
@@ -140,6 +151,7 @@ form .form-help :where(label, a) {
     font-size: 0.9rem;
 }
 
+/* New Users Link Styling */
 .form-wrapper p a {
     color: #fff;
 }
@@ -162,20 +174,27 @@ form .form-help :where(label, a) {
 
     nav,
     .form-wrapper {
-        padding: 20px;
+        padding: 20px; /* Keep padding consistent */
     }
 
     nav a img {
-        width: 540px;
+        width: 50%; /* Adjust logo size for smaller screens */
+        max-width: 140px; /* Set a max width for the logo */
     }
 
     .form-wrapper {
-        width: 100%;
-        top: 43%;
+        width: 90%; /* Ensure the form wrapper is responsive */
+        top: 55%; /* Adjust vertical positioning for mobile */
+        margin-top: 0; /* Reset margin to avoid additional space */
+    }
+
+    .form-wrapper h2 {
+        font-size: 1.5rem; /* Adjust font size for smaller screens */
+        margin-top: 10px; /* Add margin above the heading */
     }
 
     .form-wrapper form {
-        margin: 25px 0 40px;
+        margin: 15px 0 40px; /* Adjust margins */
     }
 }
 
@@ -183,7 +202,6 @@ form .form-help :where(label, a) {
 @media (min-width: 741px) and (max-width: 1024px) {
     nav {
         padding: 25px 10%; /* Increased padding for tablets */
-        
     }
 
     nav a img {
@@ -216,14 +234,10 @@ form .form-help :where(label, a) {
     }
 }
 
-
-
-
+/* Footer Styles */
 .footer {
-    background:transparent;
+    background: transparent;
     color: #fff;
-    /* Add horizontal padding for responsiveness */
-    font-family: sans-serif;
     width: 100%;
     display: flex;
     flex-direction: column; /* Stack items vertically */
@@ -231,19 +245,17 @@ form .form-help :where(label, a) {
     text-align: center;
     margin-bottom: 0px;
     padding-bottom: 0px;
-    
 }
 
 .footer-content {
     display: flex;
     justify-content: center;
     align-items: center;
-    display: flex;
-    align-items: center; /* Align items in the center */
     gap: 10px; 
 }
-.footer-content h3{
-    color:white;
+
+.footer-content h3 {
+    color: white;
 }
 
 .footer-content a {
