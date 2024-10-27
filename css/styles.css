@@ -82,12 +82,8 @@ footer {
 }
 .no-underline {
     text-decoration: none;
+    color: white;
   }
-.sign-in-btn a{
-    
-    color: White;
-    
-}
 .sign-in-btn:hover{
     background-color: #ff0000cb;
 }
