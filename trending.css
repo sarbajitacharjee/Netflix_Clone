@@ -159,6 +159,8 @@
     grid-gap: 20px;
     grid-template-columns: repeat(4, 1fr);
   }
+
+
   
   .sub-links a {
     color: var(--dark);
@@ -166,18 +168,22 @@
   }
   
   .sub-links a:hover {
-    color: var(--dark);
+    color:white;
     text-decoration: underline;
   }
   
-  .logos a{
+  
+  .logos a {
+    color: #333; /* Initial color of the icons */
     padding: 10px;
-  }
-  
-  .logo {
-    color: var(--dark);
-  }
-  
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+.logos a:hover {
+    color: #0073e6; /* Change to any color you like on hover */
+}
+
+ 
 
   /* Footer CSS */
 .footer {
