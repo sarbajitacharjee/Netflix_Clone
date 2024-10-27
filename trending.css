@@ -360,3 +360,19 @@
     
      
   }
+
+  /* Default Styling for Sub-Links */
+.sub-links ul {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(4, 1fr); /* Default setting for larger screens */
+}
+
+/* Responsive Styling for Mobile (2 items per row) */
+@media (max-width: 768px) {
+  .sub-links ul {
+    grid-template-columns: repeat(2, 1fr); /* 2 items per row */
+  }
+}
