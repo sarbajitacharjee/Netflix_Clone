@@ -148,6 +148,21 @@
     .profile>a>div:hover{
         color:white
     }
+
+    @media (max-width: 480px) {
+  .profiles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-around;
+  }
+  
+  .profile {
+    flex: 1 1 45%; /* Allow 2 items per row with 45% width */
+    max-width: 45%;
+  }
+}
+
     
 
   </style>
