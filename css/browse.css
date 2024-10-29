@@ -287,15 +287,33 @@
     background: white;
     color: black;
     border: 0;
+    padding: 0.6rem 1.3rem;
+    font-size: 1.5rem;
   }
   .buttons-container .more-info-button{
     background-color: rgba(133,133,133,0.6);
     color: white;
     font-weight: bold;
+    padding: 0.6rem 1.3rem;
+    font-size: 1.5rem;
   }
   .play-button a{
       color: black;
+      
   }
+
+
+
+  /* -- Scaleup--  */
+
+  .scaleup {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition on transform and shadow */
+}
+
+.scaleup:hover {
+    transform: scale(1.1); /* Slightly enlarge the item */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Adds a shadow for depth */
+}
 
  
 
@@ -470,11 +488,21 @@ footer ul li{
     cursor: pointer;
 }
 
+footer ul li:hover{
+
+    color:white;
+}
+
 .service{
     border: 1px solid #808080;
     color: #808080 !important;
     background-color: transparent !important;
     margin: 20px 0px;
+}
+
+.service:hover{
+    color: white;
+    border: 2px solid #808080;
 }
 
 /* footer navigation */
@@ -528,7 +556,27 @@ footer ul li{
       .footer-navigation{
         display: flex;
     }
+    footer{
+    margin-bottom: 3rem;
+
+    }
   }
 
   
+  .github-link {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit; /* Inherit color from parent */
+  }
+  
+  .github-link:hover {
+    text-decoration: underline;
+  }
+  
+  .github-logo {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+  }
   
