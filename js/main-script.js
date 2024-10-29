@@ -1,26 +1,28 @@
-
 $(document).ready(function () {
 
-    //autoplay hero section video 
-
+    // Autoplay hero section video
     setTimeout(function () {
         document.getElementById("hero-video").play();
-    }, 5000);
+    }, 3000);
 
-    //onscroll change header color 
+    // Show poster after video ends
+    const heroVideo = document.getElementById("hero-video");
+    heroVideo.addEventListener("ended", function() {
+        heroVideo.load();  // This reloads the video, displaying the poster
+    });
+
+    // On scroll, change header color and pause/play video
     $(window).on("scroll", function() {
         if($(window).scrollTop() > 100) {
             $("header").css("background-color", "black");
-            document.getElementById("hero-video").pause();
+            heroVideo.pause();
         } else if($(window).scrollTop() < 10) {
-            //remove the background property so it comes transparent again (defined in your css)
             $("header").css("background-color", "transparent");
-            document.getElementById("hero-video").play();
+            heroVideo.play();
         }
     });
 
-    //owl carousel settings
-
+    // Owl carousel settings
     $(".owl-carousel").owlCarousel({
         loop: false,
         margin: 10,
@@ -38,7 +40,7 @@ $(document).ready(function () {
         }
     });
 
-    //autoplay video on hover over an video item
+    // Autoplay video on hover over a video item
     var figure = $(".video").hover(hoverVideo, hideVideo);
 
     function hoverVideo(e) {
@@ -49,7 +51,5 @@ $(document).ready(function () {
         $('video', this).get(0).pause();
         $('video', this).get(0).load();
     } 
-    
 
 });
-
