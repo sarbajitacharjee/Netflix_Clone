@@ -198,7 +198,7 @@
     z-index: -1;
     position: absolute;
     background-position: center center;
-    background-size: 100%;
+    background-size: cover;
     left: 0;
     right: 0;
     top: 0;
@@ -302,6 +302,32 @@
       
   }
 
+  /* Tablet responsiveness */
+@media (max-width: 1024px) and (min-width: 751px) {
+    .hero-background-image {
+        object-fit: cover;
+    }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 750px) {
+    .hero-background-image {
+        position: relative;
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+    /* Adjust container padding/margins for mobile */
+    #browse-dashboard .text-container {
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 1rem;
+    }
+    .buttons-container button {
+        padding: 0.4rem 1.2rem;
+        font-size: 1rem;
+    }
+}
 
 
   /* -- Scaleup--  */
