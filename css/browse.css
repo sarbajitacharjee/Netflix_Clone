@@ -98,6 +98,7 @@
     width: 30px;
     margin-right: 4px;
     cursor: pointer;
+    border-radius: 3px;
 }
 .righticons .profile-arrow{
     cursor: pointer;
