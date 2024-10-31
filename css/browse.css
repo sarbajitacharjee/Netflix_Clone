@@ -187,6 +187,8 @@
     margin-top: 10px;
 }
 
+
+
   @media (max-width: 760px){
       .righticons{
           display: none;
@@ -296,10 +298,18 @@
     font-weight: bold;
     padding: 0.6rem 1.3rem;
     font-size: 1.5rem;
+}
+
+.buttons-container .more-info-button:hover{
+      background-color: rgba(133,133,133,0.9);
+
   }
   .play-button a{
       color: black;
       
+  }
+  .play-button:hover{
+    background-color: wheat;
   }
 
   /* Tablet responsiveness */
@@ -504,10 +514,12 @@ footer{
 }
 footer .footer-container{
     max-width: 800px;
+    padding: 0 20px;
 }
 .widgets div{
     margin: 10 10px;
 }
+
 footer ul{
     margin: 0;
     padding: 0;
@@ -515,7 +527,7 @@ footer ul{
 footer ul li{
     list-style: none;
     padding: 6px 10px;
-    font-size: 14px;
+    font-size: 17px;
     cursor: pointer;
 }
 
@@ -592,6 +604,33 @@ footer ul li:hover{
 
     }
   }
+  @media (max-width: 600px) {
+    .widgets {
+        display: flex;
+        flex-direction: column;
+        gap: 20px; /* Space between each widget */
+    }
+
+    .widgets div {
+        width: 100%; /* Each widget takes full width */
+    }
+
+    footer ul li {
+        font-size: 16px;
+    }
+    
+    /* Center the service button */
+    .service {
+        align-self: center;
+    }
+
+    /* Adjust copyright section */
+    .copyright {
+        text-align: center;
+        padding-top: 10px;
+    }
+    
+}
 
   
   .github-link {
@@ -610,4 +649,5 @@ footer ul li:hover{
     height: 20px;
     margin-right: 5px;
   }
+  
   
