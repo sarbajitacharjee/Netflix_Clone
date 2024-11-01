@@ -50,6 +50,9 @@ a{
     color: white;
     cursor: pointer;
 }
+.button:hover{
+   background-color: #d50e18ce;
+}
 
 /* index page styling start */
 body::before{
@@ -202,6 +205,10 @@ button:focus {
 }
 #loginForm p .signUp{
     color: white;
+    
 }
+#loginForm p .signUp a:hover{
 
+    color:blue;
+}
 
