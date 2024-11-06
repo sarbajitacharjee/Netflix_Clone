@@ -308,8 +308,8 @@
       color: black;
       
   }
-  .play-button:hover{
-    background-color: wheat;
+  .hovered:hover{
+    background-color:wheat;
   }
 
   /* Tablet responsiveness */
