@@ -371,6 +371,12 @@ form h3 {
     background-color: #303030;
 }
 
+.faq-question:hover
+{
+    background-color: #242222;
+    
+}
+
 .faq-question {
     margin-bottom: 1px;
     position: relative;
